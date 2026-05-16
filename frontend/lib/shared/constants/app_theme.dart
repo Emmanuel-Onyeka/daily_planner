@@ -19,6 +19,7 @@ class AppTheme {
         secondary: AppColors.secondaryLight,
         surface: AppColors.surfaceColorLight,
         error: AppColors.errorColor,
+        outline: AppColors.borderColorLight,
       ),
       appBarTheme: const AppBarTheme(
         backgroundColor: AppColors.backgroundColorLight,
@@ -86,9 +87,10 @@ class AppTheme {
         secondary: AppColors.secondaryDark,
         surface: AppColors.surfaceColorDark,
         error: AppColors.errorColor,
+        outline: AppColors.borderColorDark,
       ),
       appBarTheme: const AppBarTheme(
-        backgroundColor: AppColors.backgroundColorDark,
+        backgroundColor: AppColors.surfaceColorDarkBase,
         elevation: 0,
         centerTitle: true,
         iconTheme: IconThemeData(color: AppColors.iconColorDark),

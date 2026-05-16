@@ -3,7 +3,7 @@ import 'package:dialy_planner/router/app_routes.dart';
 import 'package:dialy_planner/router/router_config.gr.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-final routerConfig = Provider<AppRouter>((ref) => AppRouter()); 
+final routerConfig = Provider<AppRouter>((ref) => AppRouter());
 
 @AutoRouterConfig(replaceInRouteName: 'Screen|Page|View,Route')
 class AppRouter extends RootStackRouter {
@@ -20,6 +20,10 @@ class AppRouter extends RootStackRouter {
     AutoRoute(
       page: GettingStartedRoute.page,
       path: AppRoutes.gettingStarted.path,
+    ),
+    AutoRoute(
+      page: UserInformationRoute.page,
+      path: AppRoutes.userInformation.path,
     ),
   ];
 
