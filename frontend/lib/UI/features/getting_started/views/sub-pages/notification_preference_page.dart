@@ -1,6 +1,8 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:dialy_planner/UI/features/getting_started/controller/getting_started_controller.dart';
 import 'package:dialy_planner/UI/widgets/buttons/schedura_filled_button.dart';
 import 'package:dialy_planner/UI/widgets/texts_widget.dart';
+import 'package:dialy_planner/router/router_config.gr.dart';
 import 'package:dialy_planner/shared/constants/app_spacing.dart';
 import 'package:dialy_planner/shared/extensions/context_extensions.dart';
 import 'package:flutter/material.dart';
@@ -130,7 +132,7 @@ class NotificationPreferencePage extends ConsumerWidget {
         Gap(AppSpacing.k8),
         ScheduraFilledButton.primary(
           text: 'Get started',
-          onPressed: () => notifier.changePage(3),
+          onPressed: () => context.pushRoute(DashboardRoute()),
         ),
       ],
     );

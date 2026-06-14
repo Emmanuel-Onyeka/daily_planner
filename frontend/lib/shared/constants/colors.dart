@@ -27,7 +27,7 @@ class AppColors {
   static const Color surfaceColorDarkElevated = Color(0xFF2C2C2A);
 
   static const Color cardColorLight = Colors.white;
-  static const Color cardColorDark = Color(0xFF1E293B);
+  static const Color cardColorDark = Color(0xFF161616);
 
   static const Color textColorLight = Colors.black;
   static const Color textColorDark = Colors.white;

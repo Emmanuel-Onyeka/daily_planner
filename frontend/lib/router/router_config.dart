@@ -25,6 +25,7 @@ class AppRouter extends RootStackRouter {
       page: UserInformationRoute.page,
       path: AppRoutes.userInformation.path,
     ),
+    AutoRoute(page: DashboardRoute.page, path: AppRoutes.dashboard.path),
   ];
 
   @override

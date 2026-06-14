@@ -1,6 +1,8 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:dialy_planner/UI/features/getting_started/email_login_widget.dart';
 import 'package:dialy_planner/UI/widgets/buttons/schedura_filled_button.dart';
 import 'package:dialy_planner/UI/widgets/layout/app_scaffold.dart';
+import 'package:dialy_planner/UI/widgets/schedura_bottom_sheet.dart';
 import 'package:dialy_planner/UI/widgets/texts_widget.dart';
 import 'package:dialy_planner/router/router_config.gr.dart';
 import 'package:dialy_planner/shared/constants/app_images.dart';
@@ -78,7 +80,14 @@ class GettingStartedView extends StatelessWidget {
               ScheduraFilledButton.secondary(
                 text: 'Continue with Email',
                 icon: LucideIcons.mail,
-                onPressed: () {},
+                onPressed: () {
+                  ScheduraBottomSheet.show(
+                    context: context,
+                    showDragHandle: false,
+                    showCloseButton: true,
+                    child: const EmailLoginWidget(),
+                  );
+                },
               ),
               Gap(AppSpacing.k32),
             ],
